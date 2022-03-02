@@ -1,18 +1,13 @@
 {
   "name": "create-tdd-workshop-klankblokken",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Workshop environment to practice TDD",
   "main": "index.js",
   "author": "Matthijs Groen <matthijs.groen@gmail.com>",
   "license": "MIT",
   "private": false,
-  "bin": "./bin/setup-workshop.ts",
+  "bin": "./bin/setup-workshop.js",
   "scripts": {
-    "test": "./bin/setup-workshop.ts"
-  },
-  "dependencies": {
-    "@types/node": "^17.0.21",
-    "ts-node": "^10.6.0",
-    "typescript": "^4.6.2"
+    "test": "./bin/setup-workshop.js"
   }
 }

@@ -1,16 +1,20 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env node
 
 // I know fp/promises exists that solves this, but requires a high NodeJS version > 16.7.0
 // To make this work for more versions, I use this 'older' workaround
-import { execSync } from "child_process";
-import { mkdir as mkdirCallback, copyFile as cpCallback, existsSync } from "fs";
-import { chdir } from "process";
-import { promisify } from "util";
+const { execSync } = require("child_process");
+const {
+  mkdir: mkdirCallback,
+  copyFile: cpCallback,
+  existsSync,
+} = require("fs");
+const { chdir } = require("process");
+const { promisify } = require("util");
 
 const mkdir = promisify(mkdirCallback);
 const cp = promisify(cpCallback);
 
-const setupEnvironment = async (folder: string) => {
+const setupEnvironment = async (folder) => {
   console.log(`Setting up workshop environment in ${folder}`);
   if (!existsSync(folder)) {
     await mkdir(folder);
