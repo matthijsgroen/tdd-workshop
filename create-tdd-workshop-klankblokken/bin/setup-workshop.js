@@ -21,7 +21,7 @@ const setupEnvironment = async (folder) => {
   }
   for (const fileName of [
     "package.json",
-    ".gitignore",
+    "gitignore",
     "README.md",
     "tsconfig.json",
     "jest.config.js",
@@ -30,7 +30,7 @@ const setupEnvironment = async (folder) => {
   ]) {
     await cp(
       `${__dirname}/../templates/${fileName}`,
-      `./${folder}/${fileName}`
+      `./${folder}/${fileName === "gitignore" ? ".gitignore" : fileName}`
     );
   }
 
