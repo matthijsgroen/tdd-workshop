@@ -497,7 +497,10 @@ const wordlist = (
     ...extra,
   ]
     .slice(0, level)
-    .map((item) => [item.map(([, l]) => l).join(""), [item[1], item[0]]]);
+    .map((word) => [
+      word.map(([, letters]) => letters).join(""),
+      word.map(([def, letters]) => [letters, def]),
+    ]);
 };
 
 export default wordlist;

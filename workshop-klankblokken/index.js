@@ -1450,13 +1450,14 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
         ...langeI,
         ...gAlsJ,
         ...extra, 
-    ].slice(0, level).map((item)=>[
-            item.map(([, l])=>l
+    ].slice(0, level).map((word)=>[
+            word.map(([, letters])=>letters
             ).join(""),
-            [
-                item[1],
-                item[0]
-            ]
+            word.map(([def, letters])=>[
+                    letters,
+                    def
+                ]
+            ), 
         ]
     );
 };
