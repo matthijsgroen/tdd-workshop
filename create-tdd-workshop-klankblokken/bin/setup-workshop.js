@@ -36,6 +36,7 @@ const setupEnvironment = async (folder) => {
 
   chdir(folder);
   execSync("yarn install");
+  execSync(`git init ${folder}`);
 
   console.log("Welcome to the TDD workshop!\n");
   console.log(`for instructions: ${folder}/README.md`);

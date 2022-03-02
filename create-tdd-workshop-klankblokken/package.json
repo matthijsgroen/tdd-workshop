@@ -1,6 +1,6 @@
 {
   "name": "create-tdd-workshop-klankblokken",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Workshop environment to practice TDD",
   "main": "index.js",
   "author": "Matthijs Groen <matthijs.groen@gmail.com>",
