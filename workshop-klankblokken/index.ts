@@ -519,8 +519,9 @@ const wordlist = (
         return { category, words: testWords };
       }
       // section in progress
+      const result = { category, words: testWords.slice(0, levelLeft) };
       levelLeft = 0;
-      return { category, words: testWords.slice(0, levelLeft) };
+      return result;
     })
     .filter(
       (

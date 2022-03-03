@@ -1,6 +1,6 @@
 {
   "name": "workshop-klankblokken",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Wordlist and helper functions for TDD workshop",
   "source": "index.ts",
   "main": "index.js",

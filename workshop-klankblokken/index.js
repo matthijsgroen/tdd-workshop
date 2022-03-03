@@ -1497,11 +1497,12 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
             };
         }
         // section in progress
-        levelLeft = 0;
-        return {
+        const result = {
             category: category,
             words: testWords.slice(0, levelLeft)
         };
+        levelLeft = 0;
+        return result;
     }).filter((e)=>e !== false
     );
 };
