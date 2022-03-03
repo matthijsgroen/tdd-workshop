@@ -1414,7 +1414,6 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
         $80bd448eb6ea085b$var$ongeluk,
         $80bd448eb6ea085b$var$ongelijk,
         $80bd448eb6ea085b$var$gelijk,
-        $80bd448eb6ea085b$var$onmogelijk,
         $80bd448eb6ea085b$var$gelukkig,
         $80bd448eb6ea085b$var$dromerige, 
     ];
@@ -1435,30 +1434,77 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
         $80bd448eb6ea085b$var$repareren,
         $80bd448eb6ea085b$var$verwerkte,
         $80bd448eb6ea085b$var$vergelijk,
+        $80bd448eb6ea085b$var$onmogelijk,
         $80bd448eb6ea085b$var$mogelijk,
         $80bd448eb6ea085b$var$speciale,
         $80bd448eb6ea085b$var$ongeldig,
         $80bd448eb6ea085b$var$fantastisch,
         $80bd448eb6ea085b$var$geweldig, 
     ];
-    return [
-        ...ophakken,
-        ...tweeKlanken,
-        ...letterGroepen,
-        ...langeKlanken,
-        ...stommeE,
-        ...langeI,
-        ...gAlsJ,
-        ...extra, 
-    ].slice(0, level).map((word)=>[
-            word.map(([, letters])=>letters
-            ).join(""),
-            word.map(([def, letters])=>[
-                    letters,
-                    def
-                ]
-            ), 
-        ]
+    let levelLeft = level;
+    const challenges = [
+        {
+            category: "Ophakken",
+            words: ophakken
+        },
+        {
+            category: "Tweeklanken",
+            words: tweeKlanken
+        },
+        {
+            category: "Lettergroepen",
+            words: letterGroepen
+        },
+        {
+            category: "Korte klinker met lange klank",
+            words: langeKlanken
+        },
+        {
+            category: "Stomme E",
+            words: stommeE
+        },
+        {
+            category: "Lange i",
+            words: langeI
+        },
+        {
+            category: "G als J",
+            words: gAlsJ
+        },
+        {
+            category: "Bonus!",
+            words: extra
+        }, 
+    ];
+    return challenges.map(({ category: category , words: words  })=>{
+        const testWords = words.map((word)=>[
+                word.map(([, letters])=>letters
+                ).join(""),
+                word.map(([def, letters])=>[
+                        letters,
+                        def
+                    ]
+                ), 
+            ]
+        );
+        if (words.length < levelLeft) {
+            // section complete
+            levelLeft -= words.length;
+            return {
+                category: category,
+                words: testWords
+            };
+        }
+        if (words.length >= levelLeft) {
+            // section complete
+            levelLeft = 0;
+            return {
+                category: category,
+                words: testWords.slice(levelLeft)
+            };
+        }
+        return false;
+    }).filter((e)=>e !== false
     );
 };
 var $80bd448eb6ea085b$export$2e2bcd8739ae039 = $80bd448eb6ea085b$var$wordlist;

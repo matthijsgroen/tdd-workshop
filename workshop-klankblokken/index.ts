@@ -447,7 +447,10 @@ const afwas: Classification = [
 
 const wordlist = (
   level: number
-): [word: string, definition: Classification][] => {
+): {
+  category: string;
+  words: [word: string, definition: Classification][];
+}[] => {
   const ophakken = [kar, zet, vaas, afwas, pakket, snel, knipoog];
   const tweeKlanken = [boek, deur, trui, koe];
   const letterGroepen = [klank, school, mooi, meeuw, schreeuw];
@@ -464,7 +467,6 @@ const wordlist = (
     ongeluk,
     ongelijk,
     gelijk,
-    onmogelijk,
     gelukkig,
     dromerige,
   ];
@@ -478,29 +480,55 @@ const wordlist = (
     repareren,
     verwerkte,
     vergelijk,
+    onmogelijk,
     mogelijk,
     speciale,
     ongeldig,
     fantastisch,
-
     geweldig,
   ];
+  let levelLeft = level;
 
-  return [
-    ...ophakken,
-    ...tweeKlanken,
-    ...letterGroepen,
-    ...langeKlanken,
-    ...stommeE,
-    ...langeI,
-    ...gAlsJ,
-    ...extra,
-  ]
-    .slice(0, level)
-    .map((word) => [
-      word.map(([, letters]) => letters).join(""),
-      word.map(([def, letters]) => [letters, def]),
-    ]);
+  const challenges: { category: string; words: Classification[] }[] = [
+    { category: "Ophakken", words: ophakken },
+    { category: "Tweeklanken", words: tweeKlanken },
+    { category: "Lettergroepen", words: letterGroepen },
+    { category: "Korte klinker met lange klank", words: langeKlanken },
+    { category: "Stomme E", words: stommeE },
+    { category: "Lange i", words: langeI },
+    { category: "G als J", words: gAlsJ },
+    { category: "Bonus!", words: extra },
+  ];
+
+  return challenges
+    .map(({ category, words }) => {
+      const testWords: [word: string, definition: Classification][] = words.map(
+        (word) => [
+          word.map(([, letters]) => letters).join(""),
+          word.map(([def, letters]) => [letters, def]),
+        ]
+      );
+
+      if (words.length < levelLeft) {
+        // section complete
+        levelLeft -= words.length;
+        return { category, words: testWords };
+      }
+      if (words.length >= levelLeft) {
+        // section complete
+        levelLeft = 0;
+        return { category, words: testWords.slice(levelLeft) };
+      }
+      return false;
+    })
+    .filter(
+      (
+        e
+      ): e is {
+        category: string;
+        words: [word: string, definition: Classification][];
+      } => e !== false
+    );
 };
 
 export default wordlist;
