@@ -509,17 +509,18 @@ const wordlist = (
         ]
       );
 
+      if (levelLeft === 0) {
+        return false;
+      }
+
       if (words.length < levelLeft) {
         // section complete
         levelLeft -= words.length;
         return { category, words: testWords };
       }
-      if (words.length >= levelLeft) {
-        // section complete
-        levelLeft = 0;
-        return { category, words: testWords.slice(levelLeft) };
-      }
-      return false;
+      // section in progress
+      levelLeft = 0;
+      return { category, words: testWords.slice(0, levelLeft) };
     })
     .filter(
       (
