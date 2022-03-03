@@ -6,6 +6,8 @@ In deze workshop is het doel **niet** om te leren hoe je testen schrijft, maar o
 
 ## Opdracht
 
+Kinderen met dyslexie zijn erg geholpen als ze bij woorden sneller weten hoe de uitspraak is. Een methode hiervoor is 'klankblokken' letters bij elkaar zetten en van een kleur voorzien zodat klanken die bij de letters horen sneller te herkennen zijn.
+
 Hak woorden op in klanken / lettergroepen.
 Klassificeer deze klanken.
 

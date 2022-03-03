@@ -2509,10 +2509,10 @@ word-wrap@~1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 
-workshop-klankblokken@1.0.0-alpha.0:
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/workshop-klankblokken/-/workshop-klankblokken-1.0.0-alpha.0.tgz#367de0a35f07fed58e98e7f53a8a892837f69364"
-  integrity sha512-CbHYTuEqlPvy3e6l/PpEiBmfCxnltiVhII5K3w92tEaNYMdUrMoMH9RuY5y37FdqexqkTyO3x2JGSceRbzpSgA==
+workshop-klankblokken@1.0.0-alpha.4:
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/workshop-klankblokken/-/workshop-klankblokken-1.0.0-alpha.4.tgz#ab2d926cbdf8611f5bb4b007a6960881ec23ed08"
+  integrity sha512-8ZXMjSseAqgOrLh7gPmrpF7e/FYDHtCLs/+hE37oZqZs7DGkKd3C7C2YbMXHLRpwSLnzjrg3wmk9FCeKrQh+UQ==
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
