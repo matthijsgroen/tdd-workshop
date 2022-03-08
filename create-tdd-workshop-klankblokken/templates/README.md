@@ -2,7 +2,11 @@
 
 Welkom bij de TDD Workshop! Misschien raar om een README in het Nederlands te zien, maar dat is omdat deze opdracht over de Nederlandse taal gaat!
 
+## Doel
+
 In deze workshop is het doel **niet** om te leren hoe je testen schrijft, maar om je implementatie te laten sturen door je testen.
+Laat je implementatie volledig leiden door je testen. En pas als alle testen groen zijn (en je klaar bent met refactoren), verhoog je de teller in de testsuite met '1', om de volgende test te implementeren (indien nodig).
+Het gaat dus om het ervaren van Test Driven Design, niet om de implementatie volledig af te krijgen.
 
 ## Opdracht
 
@@ -40,3 +44,11 @@ yarn test
 ```
 
 > Denk aan de 'Rood', 'Groen', 'Refactor' lus!
+
+Tips:
+
+- Begin zo simpel mogelijk
+- Hak gerust de functie op in meerdere functies
+- Door de tests wordt vanzelf de implementatie van zeer specifiek steeds generieker
+- Vergeet niet om pauze te nemen
+- Je kan overleggen met anderen
