@@ -355,7 +355,7 @@ const geweldig: Classification = [
 const gelij: Classification = [
   [S, "g"],
   [E, "e"],
-  [K, "l"],
+  [R, "l"],
   [T, "ij"],
 ];
 
