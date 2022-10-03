@@ -605,7 +605,7 @@ const $80bd448eb6ea085b$var$vergelijk = [
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $80bd448eb6ea085b$var$K,
         "e"
     ],
     [
@@ -893,6 +893,44 @@ const $80bd448eb6ea085b$var$vergeten = [
         "n"
     ], 
 ];
+const $80bd448eb6ea085b$var$verjaardag = [
+    [
+        $80bd448eb6ea085b$var$R,
+        "v"
+    ],
+    [
+        $80bd448eb6ea085b$var$E,
+        "e"
+    ],
+    [
+        $80bd448eb6ea085b$var$R,
+        "r"
+    ],
+    [
+        $80bd448eb6ea085b$var$R,
+        "j"
+    ],
+    [
+        $80bd448eb6ea085b$var$L,
+        "aa"
+    ],
+    [
+        $80bd448eb6ea085b$var$R,
+        "r"
+    ],
+    [
+        $80bd448eb6ea085b$var$R,
+        "d"
+    ],
+    [
+        $80bd448eb6ea085b$var$K,
+        "a"
+    ],
+    [
+        $80bd448eb6ea085b$var$R,
+        "g"
+    ], 
+];
 const $80bd448eb6ea085b$var$meedenken = [
     [
         $80bd448eb6ea085b$var$R,
@@ -1151,7 +1189,7 @@ const $80bd448eb6ea085b$var$gelij = [
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $80bd448eb6ea085b$var$R,
         "l"
     ],
     [
@@ -1415,7 +1453,10 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
         $80bd448eb6ea085b$var$ongelijk,
         $80bd448eb6ea085b$var$gelijk,
         $80bd448eb6ea085b$var$gelukkig,
-        $80bd448eb6ea085b$var$dromerige, 
+        $80bd448eb6ea085b$var$dromerige,
+        $80bd448eb6ea085b$var$vergeten,
+        $80bd448eb6ea085b$var$verjaardag,
+        $80bd448eb6ea085b$var$opgegeten, 
     ];
     const langeI = [
         $80bd448eb6ea085b$var$olifant,
@@ -1438,6 +1479,7 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
         $80bd448eb6ea085b$var$mogelijk,
         $80bd448eb6ea085b$var$speciale,
         $80bd448eb6ea085b$var$ongeldig,
+        $80bd448eb6ea085b$var$meedenken,
         $80bd448eb6ea085b$var$fantastisch,
         $80bd448eb6ea085b$var$geweldig, 
     ];

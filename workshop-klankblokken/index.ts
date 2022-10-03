@@ -256,7 +256,7 @@ const speciale: Classification = [
   [R, "l"],
   [E, "e"],
 ];
-const opgegeten = [
+const opgegeten: Classification = [
   [K, "o"],
   [R, "p"],
   [R, "g"],
@@ -267,7 +267,7 @@ const opgegeten = [
   [E, "e"],
   [R, "n"],
 ];
-const vergeten = [
+const vergeten: Classification = [
   [R, "v"],
   [E, "e"],
   [R, "r"],
@@ -278,7 +278,7 @@ const vergeten = [
   [R, "n"],
 ];
 
-const verjaardag = [
+const verjaardag: Classification = [
   [R, "v"],
   [E, "e"],
   [R, "r"],
@@ -289,7 +289,7 @@ const verjaardag = [
   [K, "a"],
   [R, "g"],
 ];
-const meedenken = [
+const meedenken: Classification = [
   [R, "m"],
   [L, "ee"],
   [R, "d"],
