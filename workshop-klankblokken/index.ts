@@ -192,7 +192,7 @@ const omgeving: Classification = [
 ];
 const vergelijk: Classification = [
   [R, "v"],
-  [E, "e"],
+  [K, "e"],
   [R, "r"],
   [R, "g"],
   [E, "e"],
@@ -276,6 +276,18 @@ const vergeten = [
   [R, "t"],
   [E, "e"],
   [R, "n"],
+];
+
+const verjaardag = [
+  [R, "v"],
+  [E, "e"],
+  [R, "r"],
+  [R, "j"],
+  [L, "aa"],
+  [R, "r"],
+  [R, "d"],
+  [K, "a"],
+  [R, "g"],
 ];
 const meedenken = [
   [R, "m"],
@@ -469,6 +481,9 @@ const wordlist = (
     gelijk,
     gelukkig,
     dromerige,
+    vergeten,
+    verjaardag,
+    opgegeten,
   ];
 
   const langeI = [olifant, medicijnen];
@@ -484,6 +499,7 @@ const wordlist = (
     mogelijk,
     speciale,
     ongeldig,
+    meedenken,
     fantastisch,
     geweldig,
   ];
