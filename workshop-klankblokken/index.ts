@@ -192,7 +192,7 @@ const omgeving: Classification = [
 ];
 const vergelijk: Classification = [
   [R, "v"],
-  [K, "e"],
+  [E, "e"],
   [R, "r"],
   [R, "g"],
   [E, "e"],
