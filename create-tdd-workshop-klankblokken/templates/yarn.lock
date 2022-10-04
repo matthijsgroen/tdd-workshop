@@ -2598,10 +2598,10 @@ word-wrap@~1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 
-workshop-klankblokken@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/workshop-klankblokken/-/workshop-klankblokken-1.1.0.tgz#90f6668f7918e7cd63f66804bb46bef1f8ac834b"
-  integrity sha512-Xzh0aPrTVMpHiFkgs2thTzl6qMUbN7qqH7ejhPitVgyOlvGHYM7WCdcVpoShc98MANXzfnHPc4B4EwamrsQBbQ==
+workshop-klankblokken@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/workshop-klankblokken/-/workshop-klankblokken-1.1.4.tgz#e8471881cfbffe55380175b2d8aba58dc8adb270"
+  integrity sha512-JPgM9S62qr44Y7QPaIzpG+3/fSsfW3BU/h+e5WIvTZtxpfhrX1c1D+ndCpbZiFiB9XEw5hD274sJNxeADf8wjQ==
   dependencies:
     readline "^1.3.0"
 

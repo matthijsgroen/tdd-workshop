@@ -24,6 +24,22 @@ const schreeuw: Classification = [
   [R, "schr"],
   [W, "eeuw"],
 ];
+const chroom: Classification = [
+  [R, "ch"],
+  [R, "r"],
+  [L, "oo"],
+  [R, "m"],
+];
+const chocolade: Classification = [
+  [R, "ch"],
+  [L, "o"],
+  [S, "c"],
+  [L, "o"],
+  [R, "l"],
+  [L, "a"],
+  [R, "d"],
+  [E, "e"],
+];
 const varen: Classification = [
   [R, "v"],
   [L, "a"],
@@ -465,7 +481,7 @@ export const wordlist = (
 }[] => {
   const ophakken = [kar, zet, vaas, afwas, pakket, snel, knipoog];
   const tweeKlanken = [boek, deur, trui, koe];
-  const letterGroepen = [klank, school, mooi, meeuw, schreeuw];
+  const letterGroepen = [klank, school, mooi, meeuw, schreeuw, chroom];
   const langeKlanken = [avontuur, omgeving, bureau, raket];
   const stommeE = [
     katje,
@@ -498,6 +514,7 @@ export const wordlist = (
     onmogelijk,
     mogelijk,
     speciale,
+    chocolade,
     ongeldig,
     meedenken,
     fantastisch,

@@ -4,5 +4,6 @@ declare const wordlist: (level: number) => {
     words: [word: string, definition: Classification][];
 }[];
 export const main: (classifyWord: (input: string) => Classification) => Promise<never>;
+export default wordlist;
 
 //# sourceMappingURL=types.d.ts.map

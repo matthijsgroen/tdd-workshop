@@ -13,7 +13,7 @@ function $parcel$interopDefault(a) {
 
 $parcel$defineInteropFlag(module.exports);
 
-$parcel$export(module.exports, "default", () => $085720d42f2e90bd$export$3373c55b773d2d68);
+$parcel$export(module.exports, "default", () => $80bd448eb6ea085b$export$2e2bcd8739ae039);
 $parcel$export(module.exports, "main", () => $605513b1e0e08e17$export$f22da7240b7add18);
 const $085720d42f2e90bd$var$R = "rest";
 const $085720d42f2e90bd$var$E = "stommeE";
@@ -60,6 +60,58 @@ const $085720d42f2e90bd$var$schreeuw = [
     [
         $085720d42f2e90bd$var$W,
         "eeuw"
+    ], 
+];
+const $085720d42f2e90bd$var$chroom = [
+    [
+        $085720d42f2e90bd$var$R,
+        "ch"
+    ],
+    [
+        $085720d42f2e90bd$var$R,
+        "r"
+    ],
+    [
+        $085720d42f2e90bd$var$L,
+        "oo"
+    ],
+    [
+        $085720d42f2e90bd$var$R,
+        "m"
+    ], 
+];
+const $085720d42f2e90bd$var$chocolade = [
+    [
+        $085720d42f2e90bd$var$R,
+        "ch"
+    ],
+    [
+        $085720d42f2e90bd$var$L,
+        "o"
+    ],
+    [
+        $085720d42f2e90bd$var$S,
+        "c"
+    ],
+    [
+        $085720d42f2e90bd$var$L,
+        "o"
+    ],
+    [
+        $085720d42f2e90bd$var$R,
+        "l"
+    ],
+    [
+        $085720d42f2e90bd$var$L,
+        "a"
+    ],
+    [
+        $085720d42f2e90bd$var$R,
+        "d"
+    ],
+    [
+        $085720d42f2e90bd$var$E,
+        "e"
     ], 
 ];
 const $085720d42f2e90bd$var$varen = [
@@ -1439,7 +1491,8 @@ const $085720d42f2e90bd$export$3373c55b773d2d68 = (level)=>{
         $085720d42f2e90bd$var$school,
         $085720d42f2e90bd$var$mooi,
         $085720d42f2e90bd$var$meeuw,
-        $085720d42f2e90bd$var$schreeuw
+        $085720d42f2e90bd$var$schreeuw,
+        $085720d42f2e90bd$var$chroom
     ];
     const langeKlanken = [
         $085720d42f2e90bd$var$avontuur,
@@ -1485,6 +1538,7 @@ const $085720d42f2e90bd$export$3373c55b773d2d68 = (level)=>{
         $085720d42f2e90bd$var$onmogelijk,
         $085720d42f2e90bd$var$mogelijk,
         $085720d42f2e90bd$var$speciale,
+        $085720d42f2e90bd$var$chocolade,
         $085720d42f2e90bd$var$ongeldig,
         $085720d42f2e90bd$var$meedenken,
         $085720d42f2e90bd$var$fantastisch,
@@ -1570,8 +1624,8 @@ const $605513b1e0e08e17$var$addClassificationToSentence = (sentence, classifyWor
             currentWord = "";
         }
         result.push([
-            "anders",
-            char
+            char,
+            "anders"
         ]);
     }
     if (currentWord.length > 0) {
@@ -1602,7 +1656,7 @@ const $605513b1e0e08e17$var$show = {
 };
 const $605513b1e0e08e17$var$formatWord = (sentence1, classifyWord)=>{
     const classifiedSentence = $605513b1e0e08e17$var$addClassificationToSentence(sentence1, classifyWord);
-    return classifiedSentence.map(([classification, sentence])=>$605513b1e0e08e17$var$show[classification](sentence)
+    return classifiedSentence.map(([sentence, classification])=>$605513b1e0e08e17$var$show[classification](sentence)
     ).join("");
 };
 const $605513b1e0e08e17$export$f22da7240b7add18 = async (classifyWord)=>{
@@ -1627,6 +1681,7 @@ const $605513b1e0e08e17$export$f22da7240b7add18 = async (classifyWord)=>{
 };
 
 
+var $80bd448eb6ea085b$export$2e2bcd8739ae039 = $085720d42f2e90bd$export$3373c55b773d2d68;
 
 
 //# sourceMappingURL=index.js.map

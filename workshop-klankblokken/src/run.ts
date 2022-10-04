@@ -16,7 +16,7 @@ const addClassificationToSentence = (
         result = result.concat(classifyWord(currentWord));
         currentWord = "";
       }
-      result.push(["anders", char]);
+      result.push([char, "anders"]);
     }
   }
   if (currentWord.length > 0) {
@@ -49,7 +49,7 @@ const formatWord = (
   );
 
   return classifiedSentence
-    .map(([classification, sentence]) => show[classification](sentence))
+    .map(([sentence, classification]) => show[classification](sentence))
     .join("");
 };
 
