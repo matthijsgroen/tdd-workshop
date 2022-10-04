@@ -1,1487 +1,1494 @@
+var $jPS5E$readline = require("readline");
+var $jPS5E$process = require("process");
+
 function $parcel$defineInteropFlag(a) {
   Object.defineProperty(a, '__esModule', {value: true, configurable: true});
 }
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
 }
+function $parcel$interopDefault(a) {
+  return a && a.__esModule ? a.default : a;
+}
 
 $parcel$defineInteropFlag(module.exports);
 
-$parcel$export(module.exports, "default", () => $80bd448eb6ea085b$export$2e2bcd8739ae039);
-const $80bd448eb6ea085b$var$R = "rest";
-const $80bd448eb6ea085b$var$E = "stommeE";
-const $80bd448eb6ea085b$var$K = "korteKlinker";
-const $80bd448eb6ea085b$var$L = "langeKlinker";
-const $80bd448eb6ea085b$var$O = "letterGroep1";
-const $80bd448eb6ea085b$var$W = "letterGroep2";
-const $80bd448eb6ea085b$var$T = "tweeKlank";
-const $80bd448eb6ea085b$var$S = "speciaal";
-const $80bd448eb6ea085b$var$A = "anders";
-const $80bd448eb6ea085b$var$mooi = [
+$parcel$export(module.exports, "default", () => $085720d42f2e90bd$export$3373c55b773d2d68);
+$parcel$export(module.exports, "main", () => $605513b1e0e08e17$export$f22da7240b7add18);
+const $085720d42f2e90bd$var$R = "rest";
+const $085720d42f2e90bd$var$E = "stommeE";
+const $085720d42f2e90bd$var$K = "korteKlinker";
+const $085720d42f2e90bd$var$L = "langeKlinker";
+const $085720d42f2e90bd$var$O = "letterGroep1";
+const $085720d42f2e90bd$var$W = "letterGroep2";
+const $085720d42f2e90bd$var$T = "tweeKlank";
+const $085720d42f2e90bd$var$S = "speciaal";
+const $085720d42f2e90bd$var$A = "anders";
+const $085720d42f2e90bd$var$mooi = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$O,
+        $085720d42f2e90bd$var$O,
         "ooi"
     ], 
 ];
-const $80bd448eb6ea085b$var$bureau = [
+const $085720d42f2e90bd$var$bureau = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "b"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "u"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$O,
+        $085720d42f2e90bd$var$O,
         "eau"
     ], 
 ];
-const $80bd448eb6ea085b$var$schreeuw = [
+const $085720d42f2e90bd$var$schreeuw = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "schr"
     ],
     [
-        $80bd448eb6ea085b$var$W,
+        $085720d42f2e90bd$var$W,
         "eeuw"
     ], 
 ];
-const $80bd448eb6ea085b$var$varen = [
+const $085720d42f2e90bd$var$varen = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$katje = [
+const $085720d42f2e90bd$var$katje = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "j"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$vette = [
+const $085720d42f2e90bd$var$vette = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$raket = [
+const $085720d42f2e90bd$var$raket = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ], 
 ];
-const $80bd448eb6ea085b$var$beren = [
+const $085720d42f2e90bd$var$beren = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "b"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$stelen = [
+const $085720d42f2e90bd$var$stelen = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "s"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$getver = [
+const $085720d42f2e90bd$var$getver = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ], 
 ];
-const $80bd448eb6ea085b$var$ongeluk = [
+const $085720d42f2e90bd$var$ongeluk = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "u"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$geluk = [
+const $085720d42f2e90bd$var$geluk = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "u"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$gelukkig = [
+const $085720d42f2e90bd$var$gelukkig = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "u"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ], 
 ];
-const $80bd448eb6ea085b$var$eten = [
+const $085720d42f2e90bd$var$eten = [
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$A,
+        $085720d42f2e90bd$var$A,
         "."
     ], 
 ];
-const $80bd448eb6ea085b$var$dromerige = [
+const $085720d42f2e90bd$var$dromerige = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$medicijnen = [
+const $085720d42f2e90bd$var$medicijnen = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "c"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "ij"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$hoger = [
+const $085720d42f2e90bd$var$hoger = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "h"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ], 
 ];
-const $80bd448eb6ea085b$var$tegen = [
+const $085720d42f2e90bd$var$tegen = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$snel = [
+const $085720d42f2e90bd$var$snel = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "s"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ], 
 ];
-const $80bd448eb6ea085b$var$avontuur = [
+const $085720d42f2e90bd$var$avontuur = [
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "A"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "uu"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ], 
 ];
-const $80bd448eb6ea085b$var$repareren = [
+const $085720d42f2e90bd$var$repareren = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "p"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$verwerkte = [
+const $085720d42f2e90bd$var$verwerkte = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "w"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$omgeving = [
+const $085720d42f2e90bd$var$omgeving = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "ng"
     ], 
 ];
-const $80bd448eb6ea085b$var$vergelijk = [
+const $085720d42f2e90bd$var$vergelijk = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "ij"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$ongelijk = [
+const $085720d42f2e90bd$var$ongelijk = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "ij"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$gelijk = [
+const $085720d42f2e90bd$var$gelijk = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "ij"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$ongeldig = [
+const $085720d42f2e90bd$var$ongeldig = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ], 
 ];
-const $80bd448eb6ea085b$var$onmogelijk = [
+const $085720d42f2e90bd$var$onmogelijk = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "ij"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$mogelijk = [
+const $085720d42f2e90bd$var$mogelijk = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "ij"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$speciale = [
+const $085720d42f2e90bd$var$speciale = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "S"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "p"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "c"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$opgegeten = [
+const $085720d42f2e90bd$var$opgegeten = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "p"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$vergeten = [
+const $085720d42f2e90bd$var$vergeten = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$verjaardag = [
+const $085720d42f2e90bd$var$verjaardag = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "j"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "aa"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ], 
 ];
-const $80bd448eb6ea085b$var$meedenken = [
+const $085720d42f2e90bd$var$meedenken = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "ee"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "nk"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ], 
 ];
-const $80bd448eb6ea085b$var$olifant = [
+const $085720d42f2e90bd$var$olifant = [
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "f"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ], 
 ];
-const $80bd448eb6ea085b$var$pakket = [
+const $085720d42f2e90bd$var$pakket = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "p"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ], 
 ];
-const $80bd448eb6ea085b$var$fantastisch = [
+const $085720d42f2e90bd$var$fantastisch = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "f"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "s"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "sch"
     ], 
 ];
-const $80bd448eb6ea085b$var$knipoog = [
+const $085720d42f2e90bd$var$knipoog = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "p"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "oo"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ], 
 ];
-const $80bd448eb6ea085b$var$linkerkant = [
+const $085720d42f2e90bd$var$linkerkant = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "nk"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "n"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ], 
 ];
-const $80bd448eb6ea085b$var$donkere = [
+const $085720d42f2e90bd$var$donkere = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "nk"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$geweldig = [
+const $085720d42f2e90bd$var$geweldig = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "w"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "i"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ], 
 ];
-const $80bd448eb6ea085b$var$gelij = [
+const $085720d42f2e90bd$var$gelij = [
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "ij"
     ], 
 ];
-const $80bd448eb6ea085b$var$horloge = [
+const $085720d42f2e90bd$var$horloge = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "h"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "o"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$garage = [
+const $085720d42f2e90bd$var$garage = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$S,
+        $085720d42f2e90bd$var$S,
         "g"
     ],
     [
-        $80bd448eb6ea085b$var$E,
+        $085720d42f2e90bd$var$E,
         "e"
     ], 
 ];
-const $80bd448eb6ea085b$var$kar = [
+const $085720d42f2e90bd$var$kar = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ], 
 ];
-const $80bd448eb6ea085b$var$zet = [
+const $085720d42f2e90bd$var$zet = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "z"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "e"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ], 
 ];
-const $80bd448eb6ea085b$var$vaas = [
+const $085720d42f2e90bd$var$vaas = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "v"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "aa"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "s"
     ], 
 ];
-const $80bd448eb6ea085b$var$klank = [
+const $085720d42f2e90bd$var$klank = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "nk"
     ], 
 ];
-const $80bd448eb6ea085b$var$school = [
+const $085720d42f2e90bd$var$school = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "sch"
     ],
     [
-        $80bd448eb6ea085b$var$L,
+        $085720d42f2e90bd$var$L,
         "oo"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "l"
     ], 
 ];
-const $80bd448eb6ea085b$var$meeuw = [
+const $085720d42f2e90bd$var$meeuw = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "m"
     ],
     [
-        $80bd448eb6ea085b$var$W,
+        $085720d42f2e90bd$var$W,
         "eeuw"
     ], 
 ];
-const $80bd448eb6ea085b$var$boek = [
+const $085720d42f2e90bd$var$boek = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "b"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "oe"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ], 
 ];
-const $80bd448eb6ea085b$var$deur = [
+const $085720d42f2e90bd$var$deur = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "d"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "eu"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ], 
 ];
-const $80bd448eb6ea085b$var$trui = [
+const $085720d42f2e90bd$var$trui = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "t"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "r"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "ui"
     ], 
 ];
-const $80bd448eb6ea085b$var$koe = [
+const $085720d42f2e90bd$var$koe = [
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "k"
     ],
     [
-        $80bd448eb6ea085b$var$T,
+        $085720d42f2e90bd$var$T,
         "oe"
     ], 
 ];
-const $80bd448eb6ea085b$var$afwas = [
+const $085720d42f2e90bd$var$afwas = [
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "f"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "w"
     ],
     [
-        $80bd448eb6ea085b$var$K,
+        $085720d42f2e90bd$var$K,
         "a"
     ],
     [
-        $80bd448eb6ea085b$var$R,
+        $085720d42f2e90bd$var$R,
         "s"
     ], 
 ];
-const $80bd448eb6ea085b$var$wordlist = (level)=>{
+const $085720d42f2e90bd$export$3373c55b773d2d68 = (level)=>{
     const ophakken = [
-        $80bd448eb6ea085b$var$kar,
-        $80bd448eb6ea085b$var$zet,
-        $80bd448eb6ea085b$var$vaas,
-        $80bd448eb6ea085b$var$afwas,
-        $80bd448eb6ea085b$var$pakket,
-        $80bd448eb6ea085b$var$snel,
-        $80bd448eb6ea085b$var$knipoog
+        $085720d42f2e90bd$var$kar,
+        $085720d42f2e90bd$var$zet,
+        $085720d42f2e90bd$var$vaas,
+        $085720d42f2e90bd$var$afwas,
+        $085720d42f2e90bd$var$pakket,
+        $085720d42f2e90bd$var$snel,
+        $085720d42f2e90bd$var$knipoog
     ];
     const tweeKlanken = [
-        $80bd448eb6ea085b$var$boek,
-        $80bd448eb6ea085b$var$deur,
-        $80bd448eb6ea085b$var$trui,
-        $80bd448eb6ea085b$var$koe
+        $085720d42f2e90bd$var$boek,
+        $085720d42f2e90bd$var$deur,
+        $085720d42f2e90bd$var$trui,
+        $085720d42f2e90bd$var$koe
     ];
     const letterGroepen = [
-        $80bd448eb6ea085b$var$klank,
-        $80bd448eb6ea085b$var$school,
-        $80bd448eb6ea085b$var$mooi,
-        $80bd448eb6ea085b$var$meeuw,
-        $80bd448eb6ea085b$var$schreeuw
+        $085720d42f2e90bd$var$klank,
+        $085720d42f2e90bd$var$school,
+        $085720d42f2e90bd$var$mooi,
+        $085720d42f2e90bd$var$meeuw,
+        $085720d42f2e90bd$var$schreeuw
     ];
     const langeKlanken = [
-        $80bd448eb6ea085b$var$avontuur,
-        $80bd448eb6ea085b$var$omgeving,
-        $80bd448eb6ea085b$var$bureau,
-        $80bd448eb6ea085b$var$raket
+        $085720d42f2e90bd$var$avontuur,
+        $085720d42f2e90bd$var$omgeving,
+        $085720d42f2e90bd$var$bureau,
+        $085720d42f2e90bd$var$raket
     ];
     const stommeE = [
-        $80bd448eb6ea085b$var$katje,
-        $80bd448eb6ea085b$var$vette,
-        $80bd448eb6ea085b$var$eten,
-        $80bd448eb6ea085b$var$varen,
-        $80bd448eb6ea085b$var$beren,
-        $80bd448eb6ea085b$var$stelen,
-        $80bd448eb6ea085b$var$getver,
-        $80bd448eb6ea085b$var$geluk,
-        $80bd448eb6ea085b$var$ongeluk,
-        $80bd448eb6ea085b$var$ongelijk,
-        $80bd448eb6ea085b$var$gelijk,
-        $80bd448eb6ea085b$var$gelukkig,
-        $80bd448eb6ea085b$var$dromerige,
-        $80bd448eb6ea085b$var$vergeten,
-        $80bd448eb6ea085b$var$verjaardag,
-        $80bd448eb6ea085b$var$opgegeten, 
+        $085720d42f2e90bd$var$katje,
+        $085720d42f2e90bd$var$vette,
+        $085720d42f2e90bd$var$eten,
+        $085720d42f2e90bd$var$varen,
+        $085720d42f2e90bd$var$beren,
+        $085720d42f2e90bd$var$stelen,
+        $085720d42f2e90bd$var$getver,
+        $085720d42f2e90bd$var$geluk,
+        $085720d42f2e90bd$var$ongeluk,
+        $085720d42f2e90bd$var$ongelijk,
+        $085720d42f2e90bd$var$gelijk,
+        $085720d42f2e90bd$var$gelukkig,
+        $085720d42f2e90bd$var$dromerige,
+        $085720d42f2e90bd$var$vergeten,
+        $085720d42f2e90bd$var$verjaardag,
+        $085720d42f2e90bd$var$opgegeten, 
     ];
     const langeI = [
-        $80bd448eb6ea085b$var$olifant,
-        $80bd448eb6ea085b$var$medicijnen
+        $085720d42f2e90bd$var$olifant,
+        $085720d42f2e90bd$var$medicijnen
     ];
     const gAlsJ = [
-        $80bd448eb6ea085b$var$gelij,
-        $80bd448eb6ea085b$var$horloge,
-        $80bd448eb6ea085b$var$garage,
-        $80bd448eb6ea085b$var$hoger,
-        $80bd448eb6ea085b$var$tegen
+        $085720d42f2e90bd$var$gelij,
+        $085720d42f2e90bd$var$horloge,
+        $085720d42f2e90bd$var$garage,
+        $085720d42f2e90bd$var$hoger,
+        $085720d42f2e90bd$var$tegen
     ];
     const extra = [
-        $80bd448eb6ea085b$var$linkerkant,
-        $80bd448eb6ea085b$var$donkere,
-        $80bd448eb6ea085b$var$repareren,
-        $80bd448eb6ea085b$var$verwerkte,
-        $80bd448eb6ea085b$var$vergelijk,
-        $80bd448eb6ea085b$var$onmogelijk,
-        $80bd448eb6ea085b$var$mogelijk,
-        $80bd448eb6ea085b$var$speciale,
-        $80bd448eb6ea085b$var$ongeldig,
-        $80bd448eb6ea085b$var$meedenken,
-        $80bd448eb6ea085b$var$fantastisch,
-        $80bd448eb6ea085b$var$geweldig, 
+        $085720d42f2e90bd$var$linkerkant,
+        $085720d42f2e90bd$var$donkere,
+        $085720d42f2e90bd$var$repareren,
+        $085720d42f2e90bd$var$verwerkte,
+        $085720d42f2e90bd$var$vergelijk,
+        $085720d42f2e90bd$var$onmogelijk,
+        $085720d42f2e90bd$var$mogelijk,
+        $085720d42f2e90bd$var$speciale,
+        $085720d42f2e90bd$var$ongeldig,
+        $085720d42f2e90bd$var$meedenken,
+        $085720d42f2e90bd$var$fantastisch,
+        $085720d42f2e90bd$var$geweldig, 
     ];
     let levelLeft = level;
     const challenges = [
@@ -1548,7 +1555,78 @@ const $80bd448eb6ea085b$var$wordlist = (level)=>{
     }).filter((e)=>e !== false
     );
 };
-var $80bd448eb6ea085b$export$2e2bcd8739ae039 = $80bd448eb6ea085b$var$wordlist;
+
+
+
+
+const $605513b1e0e08e17$var$addClassificationToSentence = (sentence, classifyWord)=>{
+    let result = [];
+    let currentWord = "";
+    //return [["anders", zin]];
+    for (const char of sentence)if (/\w|[éè]/.test(char)) currentWord += char;
+    else {
+        if (currentWord.length > 0) {
+            result = result.concat(classifyWord(currentWord));
+            currentWord = "";
+        }
+        result.push([
+            "anders",
+            char
+        ]);
+    }
+    if (currentWord.length > 0) {
+        result = result.concat(classifyWord(currentWord));
+        currentWord = "";
+    }
+    return result;
+};
+const $605513b1e0e08e17$var$reset = "\u001b[0m";
+const $605513b1e0e08e17$var$show = {
+    korteKlinker: (klinker)=>"\u001b[97;48;5;22m " + klinker + " " + $605513b1e0e08e17$var$reset
+    ,
+    speciaal: (speciaal)=>"\u001b[97;45m " + speciaal + " " + $605513b1e0e08e17$var$reset
+    ,
+    langeKlinker: (langeKlinker)=>`\u001b[30;43m ${langeKlinker} ` + $605513b1e0e08e17$var$reset
+    ,
+    tweeKlank: (tweeKlank)=>`\u001b[97;41m ${tweeKlank} ` + $605513b1e0e08e17$var$reset
+    ,
+    letterGroep1: (letterGroep)=>`\u001b[30;47m ${letterGroep} ` + $605513b1e0e08e17$var$reset
+    ,
+    letterGroep2: (letterGroep)=>`\u001b[30;47m ${letterGroep} ` + $605513b1e0e08e17$var$reset
+    ,
+    rest: (rest)=>`\u001b[97;44m ${rest} ` + $605513b1e0e08e17$var$reset
+    ,
+    stommeE: (klank)=>`\u001b[97;48;5;202m ${klank} ` + $605513b1e0e08e17$var$reset
+    ,
+    anders: (tekens)=>tekens
+};
+const $605513b1e0e08e17$var$formatWord = (sentence1, classifyWord)=>{
+    const classifiedSentence = $605513b1e0e08e17$var$addClassificationToSentence(sentence1, classifyWord);
+    return classifiedSentence.map(([classification, sentence])=>$605513b1e0e08e17$var$show[classification](sentence)
+    ).join("");
+};
+const $605513b1e0e08e17$export$f22da7240b7add18 = async (classifyWord)=>{
+    const rl = ($parcel$interopDefault($jPS5E$readline)).createInterface({
+        input: $jPS5E$process.stdin,
+        output: $jPS5E$process.stdout
+    });
+    const closeApp = ()=>{
+        console.log(`\n${$605513b1e0e08e17$var$formatWord("bedankt", classifyWord)}!`);
+        $jPS5E$process.exit(0);
+    };
+    rl.on("close", closeApp);
+    while(true)await new Promise((resolve)=>{
+        rl.question("Geef een woord:", function(word) {
+            const cleanedInput = word.trim();
+            if (cleanedInput.length > 0) {
+                console.log($605513b1e0e08e17$var$formatWord(cleanedInput, classifyWord));
+                resolve("");
+            } else closeApp();
+        });
+    });
+};
+
+
 
 
 //# sourceMappingURL=index.js.map
