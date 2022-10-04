@@ -26,6 +26,7 @@ const setupEnvironment = async (folder) => {
     "tsconfig.json",
     "jest.config.js",
     "klankblokken.ts",
+    "run.ts",
     "klankblokken.spec.ts",
   ]) {
     await cp(
